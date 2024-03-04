@@ -1,0 +1,55 @@
+
+body {
+    background-color: #00c1ec;
+}
+
+.login__area {
+    display: flex;
+    background-color: #102459;
+    width: 450px;
+    height: 600px;
+    margin: 80px auto;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 50px;
+    box-shadow: -40px 20px 5px #51ddfc;
+}
+
+.login__h2 h2 {
+    font-size: 50px;
+    color: #00c1ec;
+    margin-top: 50px;
+}
+
+.login__cpf input {
+    font-size: 25px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.login__cpf, label { /*Aplica estilo para todas as label*/
+    color: white;
+    font-size: 20px;
+}
+
+.login__senha input {
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+
+.login__botao button {
+    font-size: 20px;
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #00c1ec;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
