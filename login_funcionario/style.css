@@ -31,8 +31,9 @@ body {
 }
 
 .login__cpf, label { /*Aplica estilo para todas as label*/
-    color: white;
+    color: #c3c8d5;
     font-size: 20px;
+    font-weight: 600;
 }
 
 .login__senha input {
@@ -48,8 +49,20 @@ body {
     padding: 15px;
     border-radius: 15px;
     background-color: #00c1ec;
+    color: #102459;
     cursor: pointer;
     font-weight: bold;
+}
+
+.login__a {
+    display: flex;
+}
+
+.login__a a {
+    font-size: 22px;
+    color: #c3c8d5;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 
