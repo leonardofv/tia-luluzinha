@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turmas</title>
+    <title>Alunos</title>
     <!--ICONSCOUT CDN-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <!--CSS-->
@@ -20,7 +20,6 @@
             <button class="botao">Sair</button>
         </div>
     </header>
-    <!-- Área Principal-->
     <main id="main">
         <div class="container">
             <!-- Lado Esquerdo da Tela -->
@@ -48,9 +47,10 @@
                     </a>
                 </div>
             </div>
-            
+
             <!-- Lado Direito da Tela -->
             <div class="right">
+                <!-- Informacoes do Usuario-->
                 <div class="layout_box_infos">
                     <h2>Professor(a)</h2>
                     <div class="infos_user">
@@ -71,53 +71,46 @@
                             <p>11111111</p>
                         </div>  
                     </div>
-                </div>
-                <div class="layout_tbl">
-                    <!-- Cabeçalho da Tabela -->
-                    <div class="tbl_header">
-                        <h4>Ano Letivo 2024</h4>
-                        <!-- Funções de Pesquisar e Filtrar -->
-                        <div class="tbl_navbar">
-                            <div class="search_bar">
-                                <i class="uil uil-search"></i>
-                                <input type="search" placeholder="Pesquisar">
-                            </div>
-                            <div class="filter">
-                                <button>
-                                    <i class="uil uil-filter"></i>
-                                    Filtrar
-                                </button>
-                            </div>
+                </div> 
+
+            <div class="layout_tbl">
+                <!-- Cabeçalho da Tabela -->
+                <div class="tbl_header">
+                    <h4>Ano Letivo 2024</h4>
+                    <!-- Funções de Pesquisar e Filtrar -->
+                    <div class="tbl_navbar">
+                        <div class="search_bar">
+                            <i class="uil uil-search"></i>
+                            <input type="search" placeholder="Pesquisar">
+                        </div>
+                        <div class="filter">
+                            <button>
+                                <i class="uil uil-filter"></i>
+                                Filtrar
+                            </button>
                         </div>
                     </div>
-                    <!-- Tabela  -->
-                    <div class="tbl_body">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Turma</th>
-                                    <th>Série</th>
-                                    <th>Turno</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>5B</strong></td>
-                                    <td>5ª Série</td>
-                                    <td>Matutino</td>
-                                    <td>Pendente</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>5B</strong></td>
-                                    <td>5ª Série</td>
-                                    <td>Matutino</td>
-                                    <td>Pendente</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>  
                 </div>
+                <!-- Tabela  -->
+                <div class="tbl_body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Mátricula</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mateus Ferreira</td>
+                                <td>20202020202</td>
+                                <td>Pendente</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>  
+            </div>
             </div>
         </div>
     </main>

@@ -1,0 +1,20 @@
+#header {
+    width: 100%;
+    background-color: var(--color-primary);
+
+    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;   
+}
+
+#header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .container .logo {
+    display: flex;
+    align-items: center;
+}

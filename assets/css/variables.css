@@ -1,0 +1,14 @@
+:root {
+    --color-primary: #1768B3;
+    --color-secondary: #102459;
+    --color-grey: hsl(190, 18%, 93%);
+    --color-border: hsla(191, 14%, 38%, 0.5);
+
+    --border-radius: 1rem;
+    --botao-padding: 0.4rem 1.8rem;
+    --search-padding: 0.5rem 1rem;
+    --card-padding: 1.4rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}

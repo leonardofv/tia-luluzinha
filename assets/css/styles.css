@@ -1,172 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* Reset */
+@import "reset.css";
 
-:root {
-    --color-primary: hsl(191, 100%, 46%);
-    --color-dark-blue: #1768B3;
-    --color-grey: hsl(190, 18%, 93%);
-    --color-border: hsl(191, 100%, 14%, 0.5);
+/* Variáveis */
+@import "variables.css";
 
+/* Layouts */
+@import "layout/box_infos.css";
+@import "layout/container.css";
+@import "layout/form.css";
+@import "layout/header.css";
+@import "layout/main.css";
+@import "layout/sidebar.css";
+@import "layout/table.css";
+@import "layout/login.css";
 
-    --border-radius: 1rem;
-    --botao-padding: 0.4rem 1.8rem;
-    --search-padding: 0.5rem 1rem;
-    --card-padding: 1.4rem;
-}
+/* Componentes */
+@import "components/ui_components.css";
 
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    border: none;
-    font-family: "open sans", sans-serif
-}
-
-body {
-    background-color: #fff;
-}
-
-/*ESTILOS GERAIS*/
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.botao {
-    display: inline-block;
-    padding: var(--botao-padding);
-    margin-right: 0.3rem;
-    font-weight: 600;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    transition: all 300ms ease;
-    font-size: 0.9rem;
-}
-
-.botao:hover{
-    opacity: 0.8;
-}
-
-
-/*===============================Barra de Navegação ===============================*/
-nav {
-    width: 100%;
-    background-color: var(--color-dark-blue);
-
-    padding: 0.5rem 0;
-    position: fixed;
-    top: 0;
-    z-index: 10;   
-}
-
-nav .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav .container .logo {
-    display: flex;
-    align-items: center;
-}
-
-/* ========================== Área Principal =========================*/
-main {
-    position: relative;
-    top: 5.4rem;
-}
-/*------------------ Infos do Usuário -------------------*/
-
-.infos_user {
-    background: var(--color-grey);
-    margin-bottom: 2rem;
-    border-radius: var(--border-radius);
-    padding: var(--card-padding);
-    overflow: hidden;
-}
-.infos_user h2 {
-    margin-bottom: 1rem;
-}
-
-.infos_user .infos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.infos_user .infos .info_item {
-    width: 50%;
-    margin-bottom: 0.4rem;
-}
-
-/* ------------------------- Tabela ------------------------ */
-/**----------- Header --------------------*/
-.tbl_container {
-    background: var(--color-grey);
-    border-radius: var(--border-radius);
-    height: 85vh;
-    overflow: hidden;
-}
-
-.tbl_container .tbl_header {
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    padding: var(--card-padding);
-}
-
-/*---- Caixa de Pesquisa e Filtro da tbl--------- */
-.tbl_header .tbl_nav_bar {
-    background: var(--color-grey);
-    display: flex;
-    align-items: center;
-}
-
-.search_bar {
-    background: #fff;
-    border-radius: var(--border-radius);
-    padding: var(--search-padding);
-    margin-right: 1rem;
-
-}
-
-.search_bar input[type="search"]{
-    background: transparent;
-    width: 15vw;
-    margin-left: 0.5rem;
-    font-size: 0.9rem;
-    color: black;
-}
-
-.tbl_container .tbl_body {
-    width: 95%;
-    max-height: calc(89% - .8rem);
-    margin: .8rem auto;
-    border-radius: 0.3rem;
-    box-shadow: 1px 1px 4px 1px #2424241c;
-    overflow: auto; 
-}
-/* --------------- Tabela em si --------------*/
-table {
-    width: 100%;
-}
-
-table, th, td {
-    border-collapse: collapse;
-    padding: 1rem;
-}
-
-thead th {
-    background-color: var(--color-dark-blue);
-}
-
-tbody tr:nth-child(even){
-    background: #0000000b;
-}
-
-tbody tr:hover {
-    background-color: rgba(82, 92, 105, 0.129);
-}
 

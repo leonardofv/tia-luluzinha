@@ -1,0 +1,25 @@
+body {
+    background-color: #fff;
+}
+
+#main {
+    position: relative;
+    top: 5.4rem;
+}
+
+#main .container{
+    display: grid;
+    grid-template-columns: 18vw auto;
+    column-gap: 1rem;
+    position: relative;
+}
+
+#main .container a{
+    color: #fff;
+}
+
+#main .container .left{
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-left);
+}
