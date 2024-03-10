@@ -9,17 +9,26 @@ body {
 
 #main .container{
     display: grid;
-    grid-template-columns: 18vw auto;
+    grid-template-columns: 15% 85%;
     column-gap: 1rem;
     position: relative;
 }
-
+/*
 #main .container a{
-    color: #fff;
+    color: #ffffff;
 }
+*/
 
 #main .container .left{
     height: max-content;
     position: sticky;
     top: var(--sticky-top-left);
+}
+
+#main .container .page_title {
+    text-align: center;
+}
+
+#main .container botao {
+    text-align: center;
 }

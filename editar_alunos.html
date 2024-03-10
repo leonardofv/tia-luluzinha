@@ -25,19 +25,19 @@
             <!-- Lado Esquerdo da Tela -->
             <div class="left">
                 <div class="layout_sidebar">
-                    <a href="alunos.html" class="menu_item">
+                    <a href="editar_alunos.html" class="menu_item">
                         <span><i class="uil uil-book-reader"></i></span>
                         <h3>Alunos</h3>
                     </a>
-                    <a href="professores.html" class="menu_item">
+                    <a href="editar_professores.html" class="menu_item">
                         <span><i class="uil uil-book-reader"></i></span>
-                        <h3>professores</h3>
+                        <h3>Professores</h3>
                     </a>
-                    <a href="disciplinas.html" class="menu_item">
+                    <a href="editar_disciplinas.html" class="menu_item">
                         <span><i class="uil uil-books"></i></span>
                         <h3>Disciplinas</h3>
                     </a>
-                    <a href="turmas.html" class="menu_item">
+                    <a href="editar_turmas.html" class="menu_item">
                         <span><i class="uil uil-users-alt"></i></span>
                         <h3>Turmas</h3>
                     </a>
@@ -50,28 +50,6 @@
 
             <!-- Lado Direito da Tela -->
             <div class="right">
-                <!-- Informacoes do Usuario-->
-                <div class="layout_box_infos">
-                    <h2>Professor(a)</h2>
-                    <div class="infos_user">
-                        <div class="info_item">
-                            <h4>Nome</h4>
-                            <p>Francisco Sousa</p>
-                        </div>
-                        <div class="info_item">
-                            <h4>CPF</h4>
-                            <p>000.000.000.00</p>
-                        </div>
-                        <div class="info_item">
-                            <h4>E-mail</h4>
-                            <p>11111111@professores.luluzinha.br</p>
-                        </div>
-                        <div class="info_item">
-                            <h4>Matrícula</h4>
-                            <p>11111111</p>
-                        </div>  
-                    </div>
-                </div> 
 
             <div class="layout_tbl">
                 <!-- Cabeçalho da Tabela -->
@@ -98,14 +76,24 @@
                             <tr>
                                 <th>Nome</th>
                                 <th>Mátricula</th>
+                                <th>Série</th>
+                                <th>Turma</th>
                                 <th>Status</th>
+                                <th>Editar</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Mateus Ferreira</td>
                                 <td>20202020202</td>
+                                <td>5ª Série</td>
+                                <td>5B</td>
                                 <td>Pendente</td>
+                                <td>
+                                    <a href="/cadastro_aluno.html">
+                                    <i class="uil uil-edit"></i>
+                                    </a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

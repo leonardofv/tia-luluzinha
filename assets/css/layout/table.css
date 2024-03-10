@@ -39,12 +39,28 @@
     background-color: var(--color-primary);
 }
 
+.tbl_body thead th {
+    border-style:solid;
+    border-width: 2px;
+    color: var(--color-grey);
+}
+
 .tbl_body tbody tr:nth-child(even){
     background: #0000000b;
 }
 
 .tbl_body tbody tr:hover {
     background-color: rgba(82, 92, 105, 0.129);
+}
+
+.tbl_body tbody tr td{
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--color-border);
+}
+
+.tbl_body a {
+    color: rgb(56, 56, 56);
 }
 
 

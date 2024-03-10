@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,105 +28,113 @@
             <!-- Lado Esquerdo da Tela -->
             <div class="left">
                 <div class="layout_sidebar">
-                    <a href="alunos.html" class="menu_item">
-                        <span><i class="uil uil-book-reader"></i></span>
-                        <h3>Alunos</h3>
-                    </a>
-                    <a href="professores.html" class="menu_item">
-                        <span><i class="uil uil-book-reader"></i></span>
-                        <h3>Professores</h3>
-                    </a>
-                    <a href="disciplinas.html" class="menu_item">
-                        <span><i class="uil uil-books"></i></span>
-                        <h3>Disciplinas</h3>
-                    </a>
-                    <a href="turmas.html" class="menu_item">
-                        <span><i class="uil uil-users-alt"></i></span>
-                        <h3>Turmas</h3>
-                    </a>
-                    <a href="boletins.html" class="menu_item">
-                        <span><i class="uil uil-grid"></i></span>
-                        <h3>Boletins</h3>
-                    </a>
+                    <div class="sidebar_header">
+                        <span>Olá, MATEUS</span>
+                    </div>
+                    <ul class="sidebar_options">
+                        <h3>Área do Aluno</h3>
+                        <span><i class="uil uil-angle-down"></i></span>
+                        <li class="option">
+                            <ul class="sub_options">
+                                <li>
+                                    <a href="boletim_aluno.html" class="menu_item">
+                                        <span><i class="uil uil-grid"></i></span>
+                                        <h3>Boletim</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="sidebar_footer">
+                        <h3>SUPORTE</h3>
+                        <h4>ATENDIMENTO TELEFÔNICO</h4>
+                        <p>(98) 3245-7655</p>
+                        <p>(98) 3278-7766</p>
+                        <h4>E-MAIL</h4>
+                        <p>atendimento@tialuluzinha.br</p>
+                    </div> 
                 </div>
             </div>
 
             <!-- Lado Direito da Tela -->
             <div class="right">
-                <!-- Informacoes do Usuario-->
-            <div class="layout_box_infos">
-                <h2>Aluno(a)</h2>
-                <div class="infos_user">
-                    <div class="info_item">
-                        <h4>Nome</h4>
-                        <p>Mateus Ferreira</p>
+                <div class="layout_box_infos">
+                    <h2>Aluno(a)</h2>
+                    <div class="infos_user">
+                        <div class="info_item">
+                            <h4>Nome</h4>
+                            <p>Mateus Ferreira</p>
+                        </div>
+                        <div class="info_item">
+                            <h4>CPF</h4>
+                            <p>111.000.000.00</p>
+                        </div>
+                        <div class="info_item">
+                            <h4>Matrícula</h4>
+                            <p>20202020202</p>
+                        </div>  
+                        <div class="info_item">
+                            <h4>Data de Nascimento</h4>
+                            <p>14/02/2012</p>
+                        </div>  
+                    </div>
+                </div>
+    
+                <div class="layout_box_infos">
+                    <div class="input_field">
+                        <label for="ano">Ano</label>
+                        <select name="ano_boletim" id="">
+                            <option value="ano2">2024</option>
+                            <option value="ano1">2023</option>
+                        </select>
                     </div>
                     <div class="info_item">
-                        <h4>CPF</h4>
-                        <p>111.000.000.00</p>
+                        <h4>Turma</h4>
+                        <p>5B</p>
                     </div>
-                    <div class="info_item">
-                        <h4>Matrícula</h4>
-                        <p>20202020202</p>
+                </div>
+    
+                <div class="layout_tbl">
+                    <!-- Cabeçalho da Tabela -->
+                    <div class="tbl_header">
+                        <h4>Boletim do Aluno</h4>
+                        <!-- Aluno Escolhe Ano -->
+                        <div class="tbl_filter_ano">
+                            
+                        </div>
+                    </div>
+                    <!-- Tabela  -->
+                    <div class="tbl_body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Disciplina</th>
+                                    <th>1º Bim
+                                    </th>
+                                    <th>2º Bim</th>
+                                    <th>3º Bim</th>
+                                    <th>4º Bim</th>
+                                    <th>Recuperação</th>
+                                    <th>Nota Final</th>
+                                    <th>Situação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Artes</td>
+                                    <td>9.2</td>
+                                    <td>8.0</td>
+                                    <td>8.5</td>
+                                    <td>7.5</td>
+                                    <td>-</td>
+                                    <td>8.3</td>
+                                    <td>Aprovado</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>  
-                    <div class="info_item">
-                        <h4>Data de Nascimento</h4>
-                        <p>14/02/2012</p>
-                    </div>  
-                </div>
-            </div>
-
-            <div class="layout_box_infos">
-                <div class="input_field">
-                    <label for="ano">Ano</label>
-                    <input type="number" id="ano_letivo_boletim" min="1990" max="2024">
-                </div>
-                <div class="info_item">
-                    <h4>Turma</h4>
-                    <p>5B</p>
-                </div>
-            </div>
-
-            <div class="layout_tbl">
-                <!-- Cabeçalho da Tabela -->
-                <div class="tbl_header">
-                    <h4>Ano Letivo 2024</h4>
-                    <!-- Aluno Escolhe Ano -->
-                    <div class="tbl_filter_ano">
-                        
-                    </div>
-                </div>
-                <!-- Tabela  -->
-                <div class="tbl_body">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Disciplina</th>
-                                <th>1º Bim
-                                </th>
-                                <th>2º Bim</th>
-                                <th>3º Bim</th>
-                                <th>4º Bim</th>
-                                <th>Recuperação</th>
-                                <th>Nota Final</th>
-                                <th>Situação</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Artes</td>
-                                <td>9.2</td>
-                                <td>8.0</td>
-                                <td>8.5</td>
-                                <td>7.5</td>
-                                <td>-</td>
-                                <td>8.3</td>
-                                <td>Aprovado</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>  
-            </div>
+                </div> 
+                <p>Porcentagem de faltas: 5%</p>     
             </div>
         </div>
     </main>
