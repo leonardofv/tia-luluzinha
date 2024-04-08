@@ -1,0 +1,22 @@
+body {
+    background: var(--color-grey);
+}
+
+main .container{
+    position: relative;
+    top: 5.4rem;
+}
+
+
+main .container a{
+    color: #940303;
+}
+
+
+main .container .page_title {
+    text-align: center;
+}
+
+main .container botao {
+    text-align: center;
+}

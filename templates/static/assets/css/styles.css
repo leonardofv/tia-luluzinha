@@ -1,0 +1,20 @@
+/* Reset */
+@import "reset.css";
+
+/* Variáveis */
+@import "variables.css";
+
+/* Layouts */
+/*@import "layout/box_infos.css";
+@import "layout/container.css";*/
+@import "layout/form.css";
+@import "layout/header.css";
+@import "layout/main.css";
+@import "layout/sidebar.css";
+@import "layout/table.css";
+/*@import "layout/login.css";*/
+
+/* Componentes */
+@import "components/ui_components.css";
+
+

@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block 'head' %} 
+{% endblock %}
+
+{% block 'title' %} Boletim {% endblock %}
+
+{% block 'sidebar-item' %}
+<li class="sidebar-item">
+    <a href="#">
+        <span><i class="uil uil-grid"></i></i></span>
+        <span class="sidebar-link-name">Boletim Escolar</span>
+    </a>
+</li>
+{% endblock %}
+
+{% block 'content' %} 
+<div class="layout_tbl">
+    <!-- Cabeçalho da Tabela -->
+    <div class="tbl_header">
+        <h4>Boletim do Aluno</h4>
+        <!-- Aluno Escolhe Ano -->
+        <div class="tbl_filter_ano">
+            
+        </div>
+    </div>
+    <!-- Tabela  -->
+    <div class="tbl_body">
+        {% if boletim_disciplina_lista %}
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="2">1º Bim</th>
+                        <th colspan="2">2º Bim</th>
+                        <th colspan="2">3º Bim</th>
+                        <th colspan="2">4º Bim</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+            
+                <thead>
+                    <tr>
+                        <th>Disciplina</th>
+                        <th>N</th>
+                        <th>F</th>
+
+                        <th>N</th>
+                        <th>F</th>
+
+                        <th>N</th>
+                        <th>F</th>
+
+                        <th>N</th>
+                        <th>F</th>        
+
+                        <th>NF</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for boletim in boletim_disciplina_lista %}
+                        <tr>
+                            <td>{{ boletim.disciplina.nome }}</td>
+                            <td>{{ boletim.etapas.nota1}}</td>
+                            <td>2</td>
+                            <td>8.0</td>
+                            <td>1</td>
+                            <td>8.5</td>
+                            <td>3</td>
+                            <td>7.5</td>
+                            <td>0</td>
+                            <td></td>
+                            <td>Aprovado</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>Não há Boletim cadastrado</p>
+        {% endif %}
+    </div>  
+</div> 
+{% endblock %}
+

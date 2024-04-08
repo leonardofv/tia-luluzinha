@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    {% block 'head' %} {% endblock %}
+
+    <title>{% block 'title' %} {% endblock %}</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="start">
+                <button id=btn class="button-bars">
+                    <span class="button-bars-icon"><i class="uil uil-bars"></i></span>
+                </button>
+                <a href="">
+                    <div class="website-logo">
+                        <img src="{% static 'assets/imgs/luluzinho_logo_amarelo.png' %}" alt="Logo Tia Luluzinha">
+                    </div>
+                </a>
+            </div>
+            <div class="center">
+                
+            </div>
+            <div class="end">
+                <button class="avatar-btn">
+                    <a href="">
+                        <img src="{% static 'assets/imgs/user-avatar.jpg' %}" alt="Imagem do Avatar" class="avatar-img">
+                    </a>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sibebar-container">
+            <div class="sidebar-header">
+                <button class="button-toggler">
+                    <span class="button-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="sidebar-content">
+                <ul class="sidebar-items">
+                    {% block 'sidebar-item' %} 
+                    {% endblock %}
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                {% block 'sidebar-footer' %} 
+                {% endblock %}
+            </div>
+        </div>
+    </nav>
+    
+   <main class="main-container">
+    <h1>ola</h1>
+        {% block 'content' %} 
+        {% endblock %}
+   </main>
+   {% block 'body' %} 
+   {% endblock %}
+   <script src="{% static 'base.js' %}"></script>
+</body>
+</html>

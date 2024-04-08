@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+     <!--ICONSCOUT CDN-->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+     <!--CSS-->
+     <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="boletim.html">
+                <div class="logo">
+                    <img src="/assets/imgs/luluzinho_logo_amarelo.png" alt="Logo da Tia Luluzinha">
+                </div>
+            </a>
+            <button class="botao">Sair</button>
+        </div>
+    </header>
+    
+    <main id="main">
+        <div class="container">
+            <!--============================== Lado Esquerdo da Tela ====================-->
+            <div class="left">
+                <!-----------------------Menu Lateral ---------------------------->
+                <div class="layout_sidebar">
+                    <a href="editar_alunos.html" class="menu_item">
+                        <span><i class="uil uil-book-reader"></i></span>
+                        <h3>Alunos</h3>
+                    </a>
+                    <a href="professores.html" class="menu_item">
+                        <span><i class="uil uil-book-reader"></i></span>
+                        <h3>Professores</h3>
+                    </a>
+                    <a href="disciplinas.html" class="menu_item">
+                        <span><i class="uil uil-books"></i></span>
+                        <h3>Disciplinas</h3>
+                    </a>
+                    <a href="turmas.html" class="menu_item">
+                        <span><i class="uil uil-users-alt"></i></span>
+                        <h3>Turmas</h3>
+                    </a>
+                    <a href="boletins.html" class="menu_item">
+                        <span><i class="uil uil-grid"></i></span>
+                        <h3>Boletins</h3>
+                    </a>
+                </div>
+                <!-------------------- Fim do Menu Lateral ------------------------>
+            </div>
+            <!--===================== Fim do Lado Esquerdo da Tela ================-->
+
+            <!--======================== Lado Direito da Tela ====================-->
+            <div class="right">
+                <div class="page_title">
+                    <h2>Cadastro Aluno</h2>
+                </div>
+                <div class="layout_form">
+                    <form class="form_cadastro">
+                        <div class="form_header">
+                            <h3>Dados Pessoais</h3>
+                        </div>
+                        <div class="form_fields">
+                            <div class="input_field">
+                                <label for="">Nome Completo:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">
+                                <label for="">RG:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">
+                                <label for="">CPF:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">
+                                <label for="">Nome do Pai:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">
+                                <label for="">Nome da Mãe:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">            
+                                <label for="">Celular:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">
+                                <label for="">Telefone:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">
+                                <label for="">Data de Nascimento:</label>
+                                <input type="date">
+                            </div>
+                            <div class="input_field">
+                                <label for="">Gênero:</label>
+                                <select id="genero" name="genero">
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="nao_binario">Não-binário</option>
+                                    <option value="outro">Outro</option>
+                                    <option value="nao_dizer">Prefiro não dizer</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                
+                    <form class="form_cadastro">
+                        <div class="form_header">
+                            <h3>Dados Escolares</h3>
+                        </div>
+                        <div class="form_fields">
+                            <div class="input_field">
+                                <label for="">Turma:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">
+                                <label for="">Ano de ingresso:</label>
+                                <input type="number" min="1990" max="2024">
+                            </div>
+                            <div class="input_field">
+                                <label for="">Matricula:</label>
+                                <input type="text">
+                            </div>
+                        </div> 
+                    </form>
+
+                    <form class="form_cadastro">
+                        <div class="form_header">
+                            <h3>Dados de Endereço</h3>
+                        </div>
+                        <div class="form_fields">
+                            <div class="input_field">
+                                <label for="">CEP:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">
+                                <label for="">Cidade:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">
+                                <label for="">Rua:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">
+                                <label for="">Número:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">
+                                <label for="">Bairro:</label>
+                                <input type="text">
+                            </div>
+                            <div class="input_field">
+                                <label for="">Complemento:</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </form>
+
+                    <form class="form_cadastro">
+                        <div class="form_header">
+                            <h3>Dados de Login</h3>
+                        </div>
+                        <div class="form_fields">
+                            <div class="input_field">
+                                <label for="">Código de Login</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </form>
+                    <button class="botao"> Cadastrar </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

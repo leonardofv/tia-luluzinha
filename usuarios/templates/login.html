@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form class="login_form" action="{% url 'login' %}" method="POST">{% csrf_token %}
+        <div class="form_fields">
+            <div class="input_field">
+                <!-- 
+                <label for="">Matrícula</label>
+                <input type="text" placeholder="Digite sua matrícula" name="matricula">
+                -->
+                <label for="">Username</label>
+                <input type="text" placeholder="Digite seu username" name="username">
+            </div>
+            <div class="input_field">
+                <label for="">Senha</label>
+                <input type="password" placeholder="Digite sua senha" name="senha">
+            </div>
+        </div>
+        <div>
+            <a href="">
+                <input type="submit" value="Entrar" class="botao"></input>
+            </a>
+        </div>
+        <div class="login_a">
+            <a href="">Entrar como Funcionário</a>
+        </div>
+    </form>
+</body>
+</html>

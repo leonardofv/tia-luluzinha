@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block 'title' %} Turmas {% endblock %}
+
+{% block 'sidebar-item' %}
+<li class="sidebar-item">
+    <a href="#">
+        <span><i class="uil uil-users-alt"></i></i></span>
+        <span class="sidebar-link-name">Turmas</span>
+    </a>
+</li>
+{% endblock %}
+
+{% block 'content' %} 
+<div class="layout_tbl">
+    <!-- Cabeçalho da Tabela -->
+    <div class="tbl_header">
+        <h4>Ano Letivo 2024</h4>
+        <!-- Funções de Pesquisar e Filtrar -->
+        <div class="tbl_navbar">
+            <div class="search_bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Pesquisar">
+            </div>
+            <div class="filter">
+                <button>
+                    <i class="uil uil-filter"></i>
+                    Filtrar
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Tabela  -->
+    <div class="tbl_body">
+        {% if turmas %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Turma</th>
+                        <th>Série</th>
+                        <th>Turno</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for turma in turmas %}
+                        <tr>                                   
+                            <td>{{ turma.nome }}</a></td>
+                            <td>{{ turma.serie }}</td>
+                            <td>{{ turma.turno }}</td>
+                            <td>{{ turma.status }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+    </div>   
+</div>
+{% endblock %}

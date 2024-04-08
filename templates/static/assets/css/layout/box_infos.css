@@ -1,0 +1,30 @@
+.layout_box_infos{
+    background: var(--color-grey);
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    padding: var(--card-padding);
+    overflow: hidden;
+}
+.layout_box_infos h2 {
+    margin-bottom: 1rem;
+}
+
+.layout_box_infos .input_field {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout_box_infos .input_field label, .input_field  input {
+    margin-bottom: 0.3rem;
+}
+
+.layout_box_infos .infos_user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.layout_box_infos .infos_user .info_item {
+    width: 50%;
+    margin-bottom: 0.4rem;
+}

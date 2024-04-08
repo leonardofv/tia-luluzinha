@@ -1,0 +1,42 @@
+.login_container {
+    background-color: var(--color-primary);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_box {
+    background-color: var(--color-secondary);
+    width: 20rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--card-padding);
+    border-radius: var(--border-radius);
+    box-shadow: -32px 20px 0px #FDE900;
+}
+
+.login_box h2 {
+    color: #FDE900;
+}
+
+.login_form .form_fields {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.login_box .input_field label {
+    text-align: right;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.login_form a {
+    color: #fff;
+    font-size: 12px;
+}
